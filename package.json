@@ -1,0 +1,14 @@
+{
+  "name": "semester-ken",
+  "version": "1.0.0",
+  "description": "Semester assignment for 2024 - Auction page",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/main.css -o ./css/tailwind.output.css",
+    "watch": "tailwindcss -i ./css/main.css -o ./css/tailwind.output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
