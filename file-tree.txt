@@ -1,0 +1,31 @@
+.
+├── 404.html
+├── README.md
+├── assets
+│   ├── icons
+│   ├── images
+│   └── videos
+├── auction.html
+├── css
+│   ├── base
+│   ├── components
+│   ├── layouts
+│   ├── main.css
+│   ├── pages
+│   ├── style.css
+│   └── tailwind.css
+├── file-tree.txt
+├── index.html
+├── js
+│   ├── app.js
+│   ├── modules
+│   │   ├── api.js
+│   │   └── formValidation.js
+│   └── pages
+│       ├── auction.js
+│       └── home.js
+├── login.html
+├── profile.html
+└── register.html
+
+13 directories, 16 files
