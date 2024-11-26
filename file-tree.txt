@@ -19,13 +19,11 @@
 ├── js
 │   ├── app.js
 │   ├── modules
-│   │   ├── api.js
-│   │   └── formValidation.js
 │   └── pages
-│       ├── auction.js
-│       └── home.js
 ├── login.html
+├── postcss.config.js
 ├── profile.html
-└── register.html
+├── register.html
+└── tailwind.config.js
 
-13 directories, 16 files
+13 directories, 14 files
