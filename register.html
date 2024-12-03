@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+        <link href="css/tailwind.output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+        <!-- Header Section -->
+        <header class="bg-blue-600 p-4 text-white">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold">Auction House</h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li>
+                            <a href="index.html" class="hover:text-gray-300"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="auction.html" class="hover:text-gray-300"
+                                >Auctions</a
+                            >
+                        </li>
+                        <li>
+                            <a href="login.html" class="hover:text-gray-300"
+                                >Login</a
+                            >
+                        </li>
+                        <li>
+                            <a href="register.html" class="hover:text-gray-300"
+                                >Register</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Register Form Section -->
+        <section class="container mx-auto mt-16">
+            <div class="max-w-md mx-auto bg-white shadow-md rounded px-8 py-10">
+                <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">
+                    Create an Account
+                </h2>
+                <form>
+                    <div class="mb-4">
+                        <label
+                            for="username"
+                            class="block text-gray-700 font-bold mb-2"
+                            >Username</label
+                        >
+                        <input
+                            id="username"
+                            type="text"
+                            required
+                            placeholder="Enter your username"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="email"
+                            class="block text-gray-700 font-bold mb-2"
+                            >Email</label
+                        >
+                        <input
+                            id="email"
+                            type="email"
+                            required
+                            placeholder="Enter your email"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="password"
+                            class="block text-gray-700 font-bold mb-2"
+                            >Password</label
+                        >
+                        <input
+                            id="password"
+                            type="password"
+                            required
+                            minlength="8"
+                            placeholder="Enter your password"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        />
+                    </div>
+                    <div class="mb-4">
+                        <label
+                            for="confirm-password"
+                            class="block text-gray-700 font-bold mb-2"
+                            >Confirm Password</label
+                        >
+                        <input
+                            id="confirm-password"
+                            type="password"
+                            required
+                            minlength="8"
+                            placeholder="Confirm your password"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    >
+                        Register
+                    </button>
+                </form>
+                <div class="text-center mt-4">
+                    <p class="text-gray-600">
+                        Already have an account?
+                        <a
+                            href="login.html"
+                            class="text-blue-600 hover:underline"
+                            >Login</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+            <p>&copy; 2024 Auction House. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
