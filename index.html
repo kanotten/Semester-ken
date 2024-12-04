@@ -3,28 +3,123 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tailwind Test</title>
-        <link href="./css/tailwind.css" rel="stylesheet" />
+        <title>Auction Site - Home</title>
+        <link href="css/tailwind.output.css" rel="stylesheet" />
     </head>
-    <body class="bg-gray-100 text-gray-900">
-        <div class="container mx-auto p-4">
-            <header class="text-center mb-6">
-                <h1 class="text-4xl font-bold text-blue-600">
-                    Tailwind CSS Test
-                </h1>
-            </header>
+    <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+        <!-- Header Section -->
+        <header class="bg-blue-600 p-4 text-white">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold">Auction House</h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li>
+                            <a href="index.html" class="hover:text-gray-300"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="auction.html" class="hover:text-gray-300"
+                                >Auctions</a
+                            >
+                        </li>
+                        <li>
+                            <a href="login.html" class="hover:text-gray-300"
+                                >Login</a
+                            >
+                        </li>
+                        <li>
+                            <a href="register.html" class="hover:text-gray-300"
+                                >Register</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <main class="flex justify-center items-center min-h-screen">
-                <button
-                    class="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-700"
+        <!-- Main Section -->
+        <main class="container mx-auto p-6">
+            <section class="text-center my-8">
+                <h2 class="text-4xl font-semibold mb-4">
+                    Welcome to the Auction House
+                </h2>
+                <p class="text-xl text-gray-600 mb-6">
+                    Find and bid on unique items across various categories. Get
+                    started today!
+                </p>
+                <a
+                    href="auction.html"
+                    class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition"
                 >
-                    Test Button
-                </button>
-            </main>
+                    Start Bidding
+                </a>
+            </section>
 
-            <footer class="text-center mt-6">
-                <p class="text-sm text-gray-500">Tailwind CSS is working!</p>
-            </footer>
-        </div>
+            <!-- Featured Auctions -->
+            <section>
+                <h3 class="text-2xl font-semibold mb-4">Featured Auctions</h3>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-white p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl"
+                    >
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt="Auction Item"
+                            class="w-full h-48 object-cover rounded-md mb-4"
+                        />
+                        <h4 class="text-xl font-semibold">Item Name 1</h4>
+                        <p class="text-gray-600 mb-4">
+                            Description of the item. This is just a placeholder
+                            text.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800"
+                            >Bid Now</a
+                        >
+                    </div>
+                    <div
+                        class="bg-white p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl"
+                    >
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt="Auction Item"
+                            class="w-full h-48 object-cover rounded-md mb-4"
+                        />
+                        <h4 class="text-xl font-semibold">Item Name 2</h4>
+                        <p class="text-gray-600 mb-4">
+                            Description of the item. This is just a placeholder
+                            text.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800"
+                            >Bid Now</a
+                        >
+                    </div>
+                    <div
+                        class="bg-white p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl"
+                    >
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt="Auction Item"
+                            class="w-full h-48 object-cover rounded-md mb-4"
+                        />
+                        <h4 class="text-xl font-semibold">Item Name 3</h4>
+                        <p class="text-gray-600 mb-4">
+                            Description of the item. This is just a placeholder
+                            text.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800"
+                            >Bid Now</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
+            <p>&copy; 2024 Auction House. All rights reserved.</p>
+        </footer>
     </body>
 </html>

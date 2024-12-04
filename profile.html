@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile Page</title>
+        <link href="css/tailwind.output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+        <!-- Header Section -->
+        <header class="bg-blue-600 p-4 text-white">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-3xl font-bold">Auction House</h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li>
+                            <a href="index.html" class="hover:text-gray-300"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="auction.html" class="hover:text-gray-300"
+                                >Auctions</a
+                            >
+                        </li>
+                        <li>
+                            <a href="login.html" class="hover:text-gray-300"
+                                >Login</a
+                            >
+                        </li>
+                        <li>
+                            <a href="register.html" class="hover:text-gray-300"
+                                >Register</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Profile Info Section -->
+        <section
+            class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-lg"
+        >
+            <h2 class="text-2xl font-bold mb-4">My Profile</h2>
+            <div class="flex items-center space-x-6">
+                <img
+                    src="https://via.placeholder.com/150"
+                    alt="Profile Picture"
+                    class="w-32 h-32 rounded-full"
+                />
+                <div>
+                    <h3 class="text-xl font-semibold">User Name</h3>
+                    <p class="text-gray-600">Email: user@example.com</p>
+                    <p class="text-gray-600">Username: user123</p>
+                </div>
+            </div>
+            <div class="mt-4 text-right">
+                <a href="settings.html" class="text-blue-600 hover:underline"
+                    >Edit Profile</a
+                >
+            </div>
+        </section>
+
+        <!-- Profile Summary Section -->
+        <section
+            class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-lg"
+        >
+            <h3 class="text-xl font-semibold mb-4">Profile Summary</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <p class="font-semibold">Total Bids Placed</p>
+                    <p class="text-lg">12</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <p class="font-semibold">Total Items Listed</p>
+                    <p class="text-lg">8</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow">
+                    <p class="font-semibold">Credits Remaining</p>
+                    <p class="text-lg">500</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Bids Section -->
+        <section
+            class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-lg"
+        >
+            <h3 class="text-xl font-semibold mb-4">My Bids</h3>
+            <div
+                id="bids-list"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            >
+                <!-- Dynamically added bids will go here -->
+            </div>
+        </section>
+
+        <!-- User Listings Section -->
+        <section
+            class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-lg"
+        >
+            <h3 class="text-xl font-semibold mb-4">My Listings</h3>
+            <div
+                id="listings-list"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            >
+                <!-- Dynamically added listings will go here -->
+            </div>
+        </section>
+
+        <!-- Current Bids Section -->
+        <section
+            class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-lg"
+        >
+            <h3 class="text-xl font-semibold mb-4">Current Bids</h3>
+            <div
+                id="current-bids-list"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            >
+                <!-- Dynamically added current bids will go here -->
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white p-4 text-center">
+            <p>&copy; 2024 Auction House. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
