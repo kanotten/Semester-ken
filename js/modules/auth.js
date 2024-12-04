@@ -1,14 +1,5 @@
-const API_URL = "https://your-api-endpoint.com"; // Replace with your actual API URL
-
-// Store API key in localStorage
-export function storeApiKey(apiKey) {
-  localStorage.setItem("accessToken", apiKey);
-}
-
-// Get API key from localStorage
-export function getApiKey() {
-  return localStorage.getItem("accessToken");
-}
+// auth.js
+const API_URL = "https://v2.api.noroff.dev";
 
 // Login function
 export async function loginUser(email, password) {
@@ -24,7 +15,7 @@ export async function loginUser(email, password) {
     if (!response.ok) throw new Error("Login failed!");
 
     const data = await response.json();
-    storeApiKey(data.accessToken); // Store token
+    localStorage.setItem("accessToken", data.accessToken); // Store token
     return data; // Return user data
   } catch (error) {
     console.error(error);
