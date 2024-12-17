@@ -1,7 +1,11 @@
-// auth.js
 const API_URL = "https://v2.api.noroff.dev";
 
-// Login function
+// checking for the access token)
+export function isLoggedIn() {
+  return localStorage.getItem("accessToken") !== null;
+}
+
+// Login
 export async function loginUser(email, password) {
   try {
     const response = await fetch(`${API_URL}/auth/login`, {
@@ -23,7 +27,7 @@ export async function loginUser(email, password) {
   }
 }
 
-// Register function
+// Register
 export async function registerUser(email, password) {
   try {
     const response = await fetch(`${API_URL}/auth/register`, {
